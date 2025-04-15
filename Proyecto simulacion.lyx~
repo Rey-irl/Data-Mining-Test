@@ -1,0 +1,2149 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices true
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\size larger
+FACULTAD DE ESTUDIOS SUPERIORES ACATLÁN
+\size default
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+TÉCNICAS ESTADÍSTICAS Y MINERÍA DE DATOS
+\size default
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+SIMULACIÓN ESTOCÁSTICA
+\size default
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size huge
+\color black
+Aplicación de Cadenas de Markov
+\series default
+\size default
+\color inherit
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\series bold
+\size huge
+\color black
+ en el Estudio del Posicionamiento 
+\series default
+\size default
+\color inherit
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\series bold
+\size huge
+\color black
+de las
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size huge
+\color black
+Telefonias Móviles en México en 
+\series default
+\size default
+\color inherit
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\series bold
+\size huge
+\color black
+el año 2012.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+PRESENTAN:
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Cruz Hernandez Maria 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Vargas Antonio Reyna
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Objetivo: 
+\end_layout
+
+\begin_layout Standard
+Implementar el método de las Cadenas de Markov para el estudio del Posicionamien
+to de las Telefonias Móviles en México en el años 2012, considerando las
+ compañias más representativas del año mencionado, es decir, Telcel, Movistar,
+ Unefon, Iusacell y Nextel.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Introducción
+\end_layout
+
+\begin_layout Standard
+En los últimos años hemos la humanidad ha estado avanzando mucho en cuanto
+ a la tecnología y en su calidad.
+ Cadá día tenemos computadoras más avanzadas, teléfonos mas sofisticados,
+ de tal forma que no es necesario prender una computadora para poder navegare
+ n internet, ni mucho menos comprar una super camara fotografica pues los
+ celulares de ahora cuentan con eso y más.
+ En México existen diversas compañias que distribuyen diversas marcas de
+ teléfonos celulares, cada una maneja tarifas un poco distintas, planes
+ de renta distintos, incluso hay unas que te dicen que 
+\begin_inset Quotes fld
+\end_inset
+
+practicamente te reglan el celular siempre y cuando compres algún tipo de
+ plan
+\begin_inset Quotes frd
+\end_inset
+
+, en esta epoca hay celulares para todos los bolsillos, en esta época ya
+ casi nadie puede estar sin un celular, cada día somos mas dependientes
+ de ésta tecnología.
+ Decidimos abordar el tema de las compañias moviles ya que nos parece muy
+ interesante saber que compañia es la que mayor cantidad de clientes tiene
+ y ver si en un futuro ésta tendencia continuará.
+\end_layout
+
+\begin_layout Standard
+Aplicando el método de las cadenas de Markov nos permitió conocer (proyectar)
+ la participación de las compañias de telefonía móvil en el mercado conforme
+ pasa el tiempo, es decir, podemos conocer la probabilidad de que un cliente
+ permanezca o cambie de compañia conforme avanza el tiempo, se plateó la
+ matriz de transición.
+ Para conocer que sucede en determinado periodo con el cliente que inicialmente
+ se encontraba en cierta compañia se resuelve con el uso de la Distribución
+ Inicial.
+ Para determinar la probabilidad límite de que el sistema se encuentre en
+ el estado j, después de muchas transiciones, y que esta probabilidad sea
+ independiente del estado inicial, se implementa la Distribución de Límite,
+ con lo cual se puede conocer que compañia se mantiene como líder, o que
+ compañia tiene mayor riesgo de pérdidas de clientes y cuales estan ganando
+ mercado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Marco Teórico
+\end_layout
+
+\begin_layout Subsection
+Del contexto de las variables y tratamiento de los datos
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el año 2012 Nielsen diseñó un cuestionario con el objetivo de recopilar
+ información acerca del segmento de mercado de jóvenes universitarios en
+ la Ciudad de México, se entrevistaron a jóvenes de entre 17 y 27 años que
+ poseían teléfono móvil, también buscaron obtener información sobre la participa
+ción de mercado y de sus tendencias de las empresas operadoras y manufactureras
+ de teléfonos móviles participantes en el segmento.
+ Nosotros utilizamos solo los resultados referentes a la participación en
+ el mercado de las empresas de telefonía móvil.
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicaron 541 cuestionarios en distintas universidades de la ciudad de México,
+ de los cuales 267 los realizaron en universidades públicas y 274 en privadas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Total de escuelas y alumnos entrevistados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/datos.PNG
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es importante mencionar que las cuatro compañías operadoras más importantes
+ de telefonía móvil en México para el año 2012 eran: Telcel tenia una participac
+ión en el mercado nacional del 69.8%, seguido por Telefónica Móviles México
+ (Movistar) que contaba con el 21.1%, Iusacell tenía el 4.2% , Nextel contaba
+ con el 3.7% y Unefon con el 1.2%.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Los resultados que obtuvieron de las encuentas se muestran en la siguiente
+ tabla:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz con los n estudiantes que cambian de compañia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/resultados.PNG
+	scale 80
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Marco Teórico del Modelo
+\end_layout
+
+\begin_layout Subsubsection
+Cadenas de Markov
+\end_layout
+
+\begin_layout Standard
+Las cadenas de Markov fueron introducidas por el matemático ruso AndreyMarkov
+ alrededor de 1905.
+ Su intención era crear un modelo probabilístico para analizar la frecuencia
+ con la que aparecen las vocales en poemas y textos literarios.
+ El éxito del modelo propuesto por Markov radica en que es lo suficientemente
+ complejo como para describir ciertas características no triviales de algunos
+ sistemas, pero al mismo tiempo es lo suficientemente sencillo para ser
+ analizado matemáticamente.
+ Las cadenas de Markov pueden aplicarse a una amplia gama de fenómenos científic
+os y sociales, y se cuenta con una teoría matemática extensa al respecto.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición y Propiedades de Markov
+\end_layout
+
+\begin_layout Standard
+Existen diferentes procesos que se pueden modelar mediante una cadena de
+ Markov y gracias a éstas podemos ver cómo cambia nuestro modelo conforme
+ avanza en el tiempo.
+ Algunos ejemplos clásicos de este tipo de modelos son: la ruina del jugador,
+ el modelo de Wright-Fisher, la cadena de Ehrenfest, el tiempo de una determinad
+a ciudad, aunque no se modela de una manera muy exacta podemos aproximarnos
+ a su comportamiento mediante dicho concepto, existen un sin número de aplicacio
+nes de este tipo de modelos, primero definiremos lo que es un estado, así
+ como un espacio de estados y posteriomente daremos la definición formal
+ de una cadena de Markov.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 1.
+ 
+\series medium
+\shape italic
+Sean 
+\begin_inset Formula $X$
+\end_inset
+
+ una variable aleatoria y 
+\begin_inset Formula $S$
+\end_inset
+
+ un conjunto de números, sea i ∈ S decimos que i es un estado, si la variable
+ aleatoria X toma el valor de i, es decir, P(X = i) > 0, y el conjunto S
+ es conocido como espacio de estados.
+\end_layout
+
+\begin_layout Standard
+De la definición se puede deducir que un estado es el posible valor que
+ toma una variable aleatoria.
+ Un espacio de estados es el conjunto de todos los posibles estados por
+ los que puede pasar una variable aleatoria.
+ Para fines prácticos consideraremos que nuestro espacio de estados sea
+ finito o numerable, más aún tomaremos conjuntos de números enteros, para
+ que nuestras variables aleatorias sean discretas.
+ De esta manera analizaremos la idea fundamental de este trabajo, esta es
+ la definición formal de una cadena de Markov.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 2.
+ 
+\series medium
+\shape italic
+Sea {Xn, n ≥ 0}, una sucesión de variables aleatorias, S un espacio de estados,
+ 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+, .
+ .
+ .
+ , 
+\begin_inset Formula $i_{n-1}$
+\end_inset
+
+, i, j ∈ S, si: 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\color black
+\begin_inset Formula $P(X_{n+1}=j|X_{n}=i,X_{n-1}=i_{n-1},i_{n-1},...,X_{0}=i_{0})=P(X_{n}=j|X_{n-1}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Decimos que la sucesión {Xn, n ≥ 0}, es una cadena de Markov.
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La Ecuación (1) es conocida como propiedad de Markov, ésta nos dice que
+ la probabilidad de un evento futuro sólo depende del evento inmediato anterior
+ y no de la evolución del sistema, lo cual implica que las cadenas de Markov
+ son procesos sin memoria.
+ Ahora que ya tenemos entendido lo que es una cadena de Markov, podemos
+ enfocarnos en ciertas cadenas que serán objeto de nuestro estudio, lo que
+ nos lleva a la siguiente definición:
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 3.
+ 
+\series medium
+\shape italic
+Sea {Xn, n ≥ 0}, una cadena de Markov con espacio de estados S, decimos
+ que {Xn, n ≥ 0}, es una cadena de Markov Homogénea, si:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P(X_{n+1}=j|X_{n}=i)=P(X_{1}=j|X_{0}=i),\ para\ i,j\ \text{∈}S$
+\end_inset
+
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se refiere al hecho de que si una cadena de Markov no depende del tiempo,
+ es decir, no depende de n, ésta es considerada una cadena homogénea, una
+ vez que ya tenemos definido nuestro objeto de estudio, usaremos una función
+ para ver cómo evoluciona o se mueve una cadena entre los diferentes estados.
+ Esta es la función de transición, y nos permitirá verlo con mayor facilidad.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 4.
+\series medium
+\shape italic
+Sea {Xn, n ≥ 0} una cadena de Markov con espacio de estados S.
+ Definimos la función p(i, j) como: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $p(i,j)=P(X_{n+1}=j|X_{n}=i)$
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Donde p(i, j) es la función de transición del estado i al estado j, y cumple
+ con las siguientes propiedades:
+\shape default
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i)\ p(i,j)\geq0,\ para\ i,j\ \epsilon S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ii)\ \sum p(i,j)=1,\ ya\ que\ cuando\ X_{n}=i,\ X_{n+1}va\ a\ alguna\ j.$
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es necesario mencionar que 
+\shape italic
+p(i, j)
+\shape default
+ es conocida como la transición en un sólo paso del estado 
+\shape italic
+i
+\shape default
+ al estado 
+\shape italic
+j
+\shape default
+.
+ En otras palabras si estamos en el instante
+\shape italic
+ i
+\shape default
+ y queremos llegar a 
+\shape italic
+j
+\shape default
+ en un sólo paso, lo denotamos por p
+\shape italic
+(i, j)
+\shape default
+, de la Definición 1.2.6 es claro ver que 
+\shape italic
+(i)
+\shape default
+ es cierto puesto que 
+\shape italic
+p(i, j)
+\shape default
+ es una probabilidad, mientras que la propiedad 
+\shape italic
+(ii)
+\shape default
+ se refire a que la suma de las probabilidades de ir de i a j es uno, para
+ tener un concepto más claro, consideremos un ejemplo bastante sencillo
+ donde se muestra lo dicho hasta ahora.
+\end_layout
+
+\begin_layout Subsubsection
+Matriz de Transición
+\end_layout
+
+\begin_layout Standard
+Lo definiremos de una manera sencilla, esto es, ver cómo podemos ir de un
+ estado a otro, es decir, cómo interactúan los estados de la cadena entre
+ sí.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 5.
+ 
+\series medium
+\shape italic
+Sea p(i, j) la función de transición de una cadena de Markov, diremos que
+ p(i, j) es la i,j−ésima entrada de la matriz P, y diremos que ésta es la
+ matriz de transición de dicha cadena.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Observación
+\series default
+.
+
+\shape italic
+ Como P está formada por cada una de las transiciones de la cadena podemos
+ afirmar que P es una matriz no negativa, lo que implica que cada una de
+ sus entradas es positiva, esto es cierto por (i) de la definición 4.
+\shape default
+
+\begin_inset VSpace defskip
+\end_inset
+
+Sabemos que las variables aleatorias pasan por diferentes estados conforme
+ ésta se mueve, pero qué sucedería si la cadena llega a un estado específico
+ y no sale de éste, el estado se convierte en un estado absorbente, lo que
+ resulta en la siguiente definición.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 6.
+
+\series medium
+\shape italic
+ Sea k ∈ S un estado de la cadena de Markov, diremos que k es un estado
+ absorbente si p(k, k) = 1.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Transición de 
+\shape italic
+m 
+\shape default
+pasos
+\end_layout
+
+\begin_layout Standard
+¿Qué pasa a largo plazo con dichas cadenas?, es fácil de deducir esto ya
+ que el modelo está dado en forma de matriz, relacionaremos esto con lo
+ que ocurre en más de un paso.
+ Básicamente analizar la potencia de la matriz de transición.
+ Lo que nos lleva a la siguiente definición.
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 7.
+ 
+\series medium
+\shape italic
+Sean {Xn, n ≥ 0}, una cadena de Markov, p(i, j) = P(Xn+1 = i|Xn = i) la
+ probabilidad de ir de i a j en un paso, definimos la probabilidad de ir
+ de i a j en m pasos, con m > 1, como:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P^{m}(i,j)=P(X_{n+m}=j|X_{n}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es necesario ver que esta propiedad sí es válida, supongamos que deseamos
+ calcular:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P^{2}(i,j)=P(X_{n+2}=i|X_{n}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vemos que para llegar a que 
+\begin_inset Formula $X_{n+2}=j$
+\end_inset
+
+ pero 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+ debe pasar por algún estado k, esto es:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P^{2}(i,j)=\underset{k}{\sum}p(i,k)p(k,j).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Teorema.
+ 
+\series medium
+\shape italic
+La probabilidad de transición de m pasos:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P^{m}(i,j)=P(X_{n+m}=j|X_{n}=i)$
+\end_inset
+
+
+\series medium
+\shape italic
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series medium
+\shape italic
+Es la m-ésima potencia de la matriz de transición P, es decir, 
+\series default
+\shape default
+
+\begin_inset Formula $P^{m}=|P\ldots P$
+\end_inset
+
+
+\series medium
+\shape italic
+ m veces .
+\end_layout
+
+\begin_layout Standard
+Dicha demostración se sigue por inducción, una vez establecido que para
+ ir de i a j en m pasos se necesita calcular la m-ésima potencia de la matriz
+ de transición, la importancia de esto es poder demostrar la ecuación de
+ Chapman-Kolmogorov, la cual está dada en la siguiente proposición.
+\end_layout
+
+\begin_layout Subsubsection*
+Proposición.
+
+\series medium
+\shape italic
+ Sean n,m ∈ 
+\begin_inset Formula $Z^{+}$
+\end_inset
+
+, entonces la probabilidad de ir de i a j en m + n pasos es:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P^{m+n}(i,j)=\underset{k}{\sum}P^{m}(i,j)P^{n}(k,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Distribución Inicial
+\end_layout
+
+\begin_layout Standard
+Una vez que ya hemos analizado algunas cadenas y sus estados podemos preguntarno
+s ¿qué sucedería si nuestro primer estado es aleatorio?, es decir, considerar
+ la posibilidad de que el primer estado de nuestra cadena de Markov sea
+ un estado generado aleatoriamente, si esto fuera tendremos en cuenta lo
+ siguiente:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P(X_{n}=j)\ =\ \underset{i}{\sum}P(X_{0}=i,X_{n}=j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ =\underset{i}{\sum}P(X_{0}=i)\ P(X_{n}=j|X_{0}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Ecuación anterior podemos ver que 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P(X_{n}=j|X_{0}=i=P^{n}(i,j)$
+\end_inset
+
+= 
+\begin_inset Formula $P^{n}(i,j)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+suponiendo que 
+\begin_inset Formula $P(X_{0}=i)=q(i)$
+\end_inset
+
+ tenemos:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P(X_{n}=j)=\underset{i}{\sum}q(i)p^{n}(i,j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En otras palabras, la Ecuación nos dice que multipliquemos por la izquierda
+ la matriz de transición por las probabilidades iniciales, dicho de otra
+ manera, para que ésta operación esté bien definida, como la matriz de transició
+n es de tamaño k × k necesitamos multiplicar por una matriz de tamaño 1
+ × k (matriz fila), lo que nos lleva a la siguiente definición:
+\end_layout
+
+\begin_layout Subsubsection*
+Definición 8.
+ 
+\series medium
+\shape italic
+Sea {Xn, n ≥ 0}, una cadena de Markov, llamaremos distribución inicial al
+ vector fila, cuyas entradas son la probabilidad de que la variable aleatoria
+ comience en un estado y será denotada por 0, es decir:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{0}=(q(0),q(1),...,q(k))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $0,1,...,k\ \epsilon S,\ q(i)=P(X_{0}=i)\ y\ \underset{i}{\sum}q(i)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Distribución Estacionaria
+\end_layout
+
+\begin_layout Standard
+Es determinante ver que la distribución inicial y la distribución de la
+ variable 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ no son iguales.
+ Sería interesante saber qué ocurre cuando la distribución inicial es igual
+ que la distribución de la variable aleatoria 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+, lo que nos lleva a la siguiente definición: 
+\end_layout
+
+\begin_layout Subsubsection*
+Definición.
+ 
+\series medium
+\shape italic
+Si la distribución en el tiempo 0, es la misma que en el tiempo 1, la propiedad
+ de Markov nos asegura que será la distribución en todo momento n, y será
+ llamada distribución estacionaria, es decir:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi\cdotp P=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Ejemplo.
+ 
+\series medium
+Supongamos que tenemos una cadena de Markov de dos estados con matriz de
+ transición:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P=\left(\begin{array}{cc}
+1-a & a\\
+b & 1-b
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calcule la distribución estacionaria para esta cadena.
+\end_layout
+
+\begin_layout Standard
+Sabemos que para que una distribución sea estacionaria 
+\begin_inset Formula $\pi\cdotp P=\pi$
+\end_inset
+
+ , es decir:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left(\begin{array}{cc}
+\pi_{1} & \pi_{2}\end{array}\right)\cdot\left(\begin{array}{cc}
+1-a & a\\
+b & 1-b
+\end{array}\right)=\left(\begin{array}{cc}
+\pi_{1} & \pi_{2}\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Del cual obtendremos el siguiente sistema de ecuaciones:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $-\pi_{1}a+\pi_{2}b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{1}a-\pi_{2}b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que no nos aporta ninguna información acerca de cómo son 
+\begin_inset Formula $\pi_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\pi_{2}$
+\end_inset
+
+, recordemos además que la suma de las 
+\begin_inset Formula $\pi's$
+\end_inset
+
+ es 1, de esta manera construimos el siguiente sistema:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{1}+\pi_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{1}a-\pi_{2}b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Del cual sabemos que las soluciones son 
+\begin_inset Formula $\pi_{1}=\frac{b}{a+b}$
+\end_inset
+
+ y 
+\begin_inset Formula $\pi_{1}=\frac{b}{a+b}$
+\end_inset
+
+ , con estos cálculos ya sabemos cuál es la distribución estacionaria, para
+ cualquier cadena de Markov de dos estados.
+\end_layout
+
+\begin_layout Subsubsection
+Distribución de Límite
+\end_layout
+
+\begin_layout Standard
+El comportamiento a largo plazo de una cadena de Markov es importante, porque
+ que vemos cómo se comportará dicha cadena.
+ Al igual que la distribución inicial podemos definir un vector fila para
+ cada instante n de ésta.
+ El vector tiene como componentes la probabilidad de iniciar en uno de los
+ estados en el instante n.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{n}=(\pi_{n}(1),...,\pi_{n}(k))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{n}(i)\geq0,\ \stackrel[j=0]{k}{\sum}\pi_{n}(j)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo que nos lleva a la siguiente relación:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{n}(j)=P(X_{n}=j)=\stackrel[i=1]{k}{\sum}\pi_{0}(i)P(X_{n}=j|X_{0}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si usamos la teoría de matrices para los cálculos de distribuciones, podemos
+ ver lo anterior de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{n}=\pi_{0}P^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como ya se mencionó, toda matriz de transición P determina una sucesión
+ de distribuciones 
+\begin_inset Formula $\pi_{0},\pi_{1},...$
+\end_inset
+
+sobre el espacio de estados S y esta dada por:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi_{n}=\pi_{n-1}P=\ldots=\pi_{0}P^{n},\ n\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bajo determinadas condiciones la sucesión anterior es convergente a una
+ distribución de probabilidad , supongamos entoces que:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi=\underset{n\rightarrow\infty}{lim}\pi_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dicho esto analizaremos las propiedades de la distribuci´on , tomando el
+ l´ımite cuando n → ∞ en la igualdad tendremos:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi=\pi P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi=\pi_{0}(\underset{n\rightarrow\infty}{lim}P^{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Definición.
+\series medium
+\shape italic
+Consideremos una cadena de Markov con matriz de transición P y distribución
+ inicial 
+\begin_inset Formula $\pi_{0}$
+\end_inset
+
+.
+ Llamaremos distribución límite de esta cadena a la matriz fila:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\pi=\underset{n\rightarrow\infty}{lim}\pi_{0}P^{n}=\underset{n\rightarrow\infty}{lim}\pi_{0}P^{n}(i,j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Aplicación del Método
+\end_layout
+
+\begin_layout Standard
+Considerando que al inicio de la investigación Telcel era el líder del mercado
+ de telefonía móvil en México, con una participación nacional del 69.8%,
+ seguido por Movistar que contaba con el 21.1%, Iusacell con el 4.2%, Nextel
+ con el 3.7% y Unefon con el 1.2%.
+ Se desea saber lo siguiente:
+\end_layout
+
+\begin_layout Enumerate
+Si inicialmente un estudiante era cliente de Telcel, ¿Cuál es la probabilidad
+ de que 5 años después éste estudiante sea cliente Movistar? 
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es la probabilidad de que 2 años después de iniciada la investigación
+ un estudiante sea cliente Nextel? 
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es el número promedio de años para que partiendo de ser cliente Unefon
+ un estudiante llegue a ser cliente Telcel por primera vez? 
+\end_layout
+
+\begin_layout Enumerate
+¿Cuál es la probabilidad de que con el paso del tiempo se mantenga el comportami
+ento descrito por el modelo después de muchos años, es decir, que los estudiante
+s sean clientes de cada una de las compañías telefónicas? 
+\end_layout
+
+\begin_layout Standard
+Para responder a las preguntas formuladas se utilizó el método de cadenas
+ de Markov apoyandonos en el software wxMaxima.
+\end_layout
+
+\begin_layout Subsection*
+Solución
+\end_layout
+
+\begin_layout Subsubsection*
+1.
+ Planteando la matriz de transición:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula $A=\left(\begin{array}{ccccc}
+0.8741 & 0.0346 & 0.0469 & 0.0370 & 0.0074\\
+0.5000 & 0.2273 & 0.1818 & 0.0909 & 0.0000\\
+0.7222 & 0.0000 & 0.2222 & 0.0556 & 0.0000\\
+0.8214 & 0.0000 & 0.0179 & 0.1429 & 0.0179\\
+0.7647 & 0.0000 & 0.0000 & 0.1765 & 0.0588
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+2.
+ Diagrama de transición:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de transición
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/diagrama.png
+	scale 83
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+3.
+ Respondiendo las preguntas
+\end_layout
+
+\begin_layout Itemize
+Si inicialmente un estudiante era cliente de Telcel, ¿Cuál es la probabilidad
+ de que 5 años después éste estudiante sea cliente Movistar? 
+\end_layout
+
+\begin_layout Standard
+Para contestar esta pregunta debemos de elevar a la 5 potencia la matriz
+ de transición, es decir, multiplicar la matriz de transición por sí misma
+ 5 veces porque el número cinco representa el número de periodos (años).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz 
+\begin_inset Formula $A{}^{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/1.PNG
+	scale 72
+	rotateOrigin rightBottom
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, hay una probabilidad de 0.04612 (4.61%) de que para
+ el año 2017 un estudiante que es cliente Telcel pase a ser cliente Movistar.
+\end_layout
+
+\begin_layout Itemize
+¿Cuál es la probabilidad de que 2 años después de iniciada la investigación
+ un estudiante sea cliente Nextel? 
+\end_layout
+
+\begin_layout Standard
+Como se mencionó antes all inicio de la investigación Telcel tenía una participa
+ción en el mercado del 69.8%, Movistar el 21.1%, Iusacell el 4.2%, Nextel el
+ 3.7% y Unefon con el 1.2%, Estos datos representan el vector inicial al cual
+ nombramo como “a” en wxMaxima, la matriz de transición se debe de multiplicar
+ 2 veces por si misma, es decir, elevarla al cuadrado, el 2 representa los
+ 2 años, se obtuvo como resultado otra matriz, la cual nombramos como “B”
+ en wxMaxima, después multiplicamos al vector “a” por la matriz “B”:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vector 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/a.PNG
+	scale 75
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz 
+\begin_inset Formula $B=A{}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/A cuadrada.PNG
+	scale 62
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matriz 
+\begin_inset Formula $a*B$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/aB.PNG
+	scale 67
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay una probabilidad del 0.0365 (3.65%) de que algún estudiante sea cliente
+ de Nextel después de 2 años.
+\end_layout
+
+\begin_layout Itemize
+¿Cuál es el número promedio de años para que partiendo de ser cliente Unefon
+ un estudiante llegue a ser cliente Telcel por primera vez?
+\end_layout
+
+\begin_layout Standard
+Para esto se deben plantear ecuaciones de la forma 
+\begin_inset Formula $\mu_{ij}=1+\sum_{n\neq j}P_{in}\mu_{nj}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se desea ir del estado 5 al estado 1, las ecuaciones a resolver son
+ las siguientes:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\ \ 0.7727\mu_{21}-0.1818\mu_{31}-0.0909\mu_{41}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ 0.7778\mu_{31}-0.0556\mu_{41}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $-0.0179\mu_{31}+0.8571\mu_{41}-0.0179\mu_{51}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\ \ \ \ \ \ \ \ -0.1765\mu_{41}+0.9412\mu_{51}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Solución a las ecuaciones
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/C.PNG
+	scale 67
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x:\mu_{21}\approx1.761014514$
+\end_inset
+
+ 
+\begin_inset Formula $\ \ \ \ \ \ y:\mu_{31}$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ z:\mu_{41}$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ w:\mu_{51}$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ \therefore$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ $
+\end_inset
+
+en promedio transcurren 1.76 años, es decir, casi 2 años para que un estudiante
+ que inicialmente es cliente Unefon llegue a ser cliente Telcel por primera
+ vez.
+\end_layout
+
+\begin_layout Itemize
+¿Cuál es la probabilidad de que con el paso del tiempo se mantenga el comportami
+ento descrito por el modelo después de muchos años, es decir, que los estudiante
+s sean clientes de cada una de las compañías telefónicas? 
+\end_layout
+
+\begin_layout Standard
+Para encontrar estas probabilidades se plantea el sistema de ecuaciones
+ a partir de la matriz de transición:
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,\,\,0.8741x+0.5y+0.7222z+0.8214w+0.7647m=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,0.0346x+0.2273y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,\,\,\,\,\,\,\,\,\,\,0.0469x+0.1818y+0.2222z+0.0179w=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.0370x+0.0909y+0.0556z+.1429w+0.1765m=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,x+y+z+w+m=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Solución a las ecuaciones
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/d1.PNG
+	scale 70
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/PMD/Desktop/Nueva carpeta/Procesos estocásticos/Proyecto Final/imagenes/d2.PNG
+	scale 70
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\approx0.847380784$
+\end_inset
+
+ 
+\begin_inset Formula $\ \ \ \ \ \ y\approx0.03794406$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ z\approx0.061025772$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ w\approx0.046114893$
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ m\approx0.007534491$
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interpretación:
+\series default
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si con el paso del tiempo se mantiene el comportamiento descrito por el
+ modelo, después de mucho años, aproximadamente, el 84.74% de los clientes
+ pertenecerán a Telcel, el 3.8% a Nextel, el 6.1% serán de Iusacell, el 4.61%
+ Movistar y el 0.75% serán de Unefon.
+\end_layout
+
+\begin_layout Part*
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+\align block
+Como se observó aplicando el método de cadenas de Markov pudimos proyectar
+ la posición en la cual se encontrarían cada una de las compañias de telefonía
+ movil en el mercado después de muchos años, a partir de un estudio realizado
+ en el 2012.
+ Telcel se mantendrá en el primer lugar en mucho tiempo, esto podría deberse
+ a que los planes que presenta son mucho mejores que los de las demás compañias
+ o tal vez a la mejor atención por parte de los empleados de dicha empresa,
+ o posblemente a que tienen costos mas bajos, etc.
+ Sin embargo en la actualidad en México ya han ingresado más compañías telefónic
+as y tal parece que Telcel ha ido bajando su nivel de usuarios, si realizamos
+ un análisis a partir de el año 2016, estamos seguras que la posición de
+ dichas empresas ya es diferente, esto se quedará para un estudio futuro.
+\end_layout
+
+\begin_layout Part*
+Bibliografía
+\end_layout
+
+\begin_layout Enumerate
+\align block
+MENDOZA YAMASHIRO, Karina.
+ 
+\series bold
+\shape italic
+
+\begin_inset Quotes fld
+\end_inset
+
+Tendencias en el mercado de teléfonos móviles en el segmento de estudiantes
+ universitarios en México: una aplicación del modelo de Markov
+\begin_inset Quotes frd
+\end_inset
+
+.
+ 
+\series default
+\shape default
+Nielsen.
+ Recuperado el 31 de agosto de 2016.
+ Disponible en:
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://revistas.ucm.es/index.php/CESE/article/view/44645 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\align block
+Delgado, Gabriel.
+
+\series bold
+\shape italic
+ Apuntes 
+\begin_inset Quotes fld
+\end_inset
+
+Cadenas de Markov
+\begin_inset Quotes frd
+\end_inset
+
+
+\series default
+\shape default
+.Recuperado el 28 de agosto de 2016.
+ Disponible en:
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://onedrive.live.com/view.aspx?resid=1C7945CD2D95DF89!161&ithint=file%2cpptx&a
+pp=PowerPoint&authkey=!AMcyh3GGQy3Z6fc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\align block
+Delgado, Gabriel.
+
+\series bold
+\shape italic
+ Apuntes 
+\begin_inset Quotes fld
+\end_inset
+
+Ejercicios resueltos de Markov
+\begin_inset Quotes frd
+\end_inset
+
+
+\series default
+\shape default
+.Recuperado el 28 de agosto de 2016.
+ Disponible en: 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://onedrive.live.com/?authkey=%21AFaw9SSQnudv62M&cid=1C7945CD2D95DF89&id=1C79
+45CD2D95DF89%21162&parId=1C7945CD2D95DF89%21110&o=OneUp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\align block
+Delgado, Gabriel.
+
+\series bold
+\shape italic
+ Apuntes 
+\begin_inset Quotes fld
+\end_inset
+
+Ejercicios resueltos de Markov
+\begin_inset Quotes frd
+\end_inset
+
+
+\series default
+\shape default
+.Recuperado el 28 de agosto de 2016.
+ Disponible en: 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://onedrive.live.com/?authkey=%21AFaw9SSQnudv62M&cid=1C7945CD2D95DF89&id=1C79
+45CD2D95DF89%21162&parId=1C7945CD2D95DF89%21110&o=OneUp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Anexos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sentencia para declarar la Matriz de Transición en wxMaxima:
+\end_layout
+
+\begin_layout Standard
+A: matrix( [0.8741,0.0346,0.0469,0.0370,0.0074], [0.5,0.2273,0.1818,0.0909,0], [0.7222,0,0.
+2222,0.0556,0], [0.8214,0,0.0179,0.1429,0.0179], [0.7647,0,0,0.1765,0.0588]);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sentencia para declarar el vector a:
+\end_layout
+
+\begin_layout Standard
+a: matrix( [0.698,0.037,0.042,0.211,0.012] );
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sentencia para resolver el sistema de ecuaciones de la pregunta 3:
+\end_layout
+
+\begin_layout Standard
+solve([0.7727*x-0.1818*y-0.0909*z=1,0.7778*y-0.0556*z=1,-0.0179*y+0.8571*z-0.0179*w=1,-0.
+1765*z+0.9412*w=1],[x,y,z,w]);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sentencia para resolver el sistema de ecuaciones de la pregunta 4:
+\end_layout
+
+\begin_layout Standard
+solve([0.8741*x+0.5*y+0.7222*z+0.8214*w+0.7647*m=x,
+\end_layout
+
+\begin_layout Standard
+0.0346*x+0.2273*y=y,0.0469*x+0.1818*y+0.2222*z+0.0179*w=z,
+\end_layout
+
+\begin_layout Standard
+0.0370*x+0.0909*y+0.0556*z+.1429*w+0.1765*m=w,x+y+z+w+m=1],[x,y,z,w,m]);
+\end_layout
+
+\end_body
+\end_document
